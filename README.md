@@ -7,3 +7,11 @@ AMQP merupakan singkatan dari Advanced Message Queuing Protocol. AMQP merupakan 
 
 ![slow](images/slow1.png)
 Program berjalan lebih lambat dari sebelumnya sehingga terjadi antrean yang besar. Pada RabbitMQ saya ada sekitar 10 messages yang masih ada pada antrean.
+
+![mq3](images/rabbitmq_three.png)
+Tampilan terminal ketika aplikasi menjalankan beberapa subscribers sekaligus.
+
+![mq3](images/1.png)
+Tampilan RabbitMQ ketika aplikasi menjalankan beberapa subscriber sekaligus.
+
+Jumlah queued messages terlihat lebih sedikit saat menjalankan lebih dari satu instance subscriber. Hal ini dikarenakan message didistribusi secara paralel oleh subscriber yang disebut juga sebagai event driven. Event yang muncul akan diproses oleh yang siap menerima event tersebut sehingga beban tersebar secara paralel.
