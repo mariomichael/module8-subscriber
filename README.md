@@ -4,3 +4,6 @@ AMQP merupakan singkatan dari Advanced Message Queuing Protocol. AMQP merupakan 
 2. What it means? guest:guest@localhost:5672, what is the first guest, and what is  the second guest, and what is localhost:5672 is for?
 `guest:guest` merupakan username dan password yang digunakan untuk akses default awal, guest pertama merupakan username sedangkan guess kedua merupakan password <br />
 `localhost:5672` merupakan alamat dan port di mana broker AMQP berjalan. localhost sendiri berarti broker AMQP berjalan di host local dan :5672 adalah port default untuk komunikasi AMQP.
+
+![slow](images/slow1.png)
+Program berjalan lebih lambat dari sebelumnya sehingga terjadi antrean yang besar. Pada RabbitMQ saya ada sekitar 10 messages yang masih ada pada antrean.
